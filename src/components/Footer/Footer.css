@@ -1,0 +1,22 @@
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -4rem;
+  margin-top: -7rem;
+}
+.footer img {
+  min-height: 60vh;
+}
+.footer .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2rem;
+  color: #fff;
+}
+.footer .text .icons {
+  margin-top: 4rem;
+}

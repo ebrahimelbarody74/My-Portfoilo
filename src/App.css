@@ -1,0 +1,72 @@
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
+}
+@media(max-width:767px){
+  .App{
+    padding: 10px;
+  }
+}
+
+a{
+  list-style: none;
+}
+ul{
+  margin: 0;
+  /* padding: 0; */
+  /* text-decoration: none !important; */
+  list-style: none ;
+
+}
+
+.button{
+  background:linear-gradient(180deg,#fdc50f 26.71% ,#fb982f 99.36%) ;
+  padding: 11px 26px 11px 26px;
+  color: white;
+  border-radius: 34px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow:  0px 20px 24px 3px rgba(2552,161,40,0.42);
+  transition: .2s ease;
+}
+.button:hover{
+  background: #fff;
+  cursor: pointer;
+  color: var(--orange);
+}
+
+  
+
+.blur{
+  position: absolute;
+  background: rgb(238, 210, 255);
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media (max-width:480px){
+  .contact,.exporience,.services,.testimonials,.toggle,.works{
+    height: 100% !important;
+  }
+}

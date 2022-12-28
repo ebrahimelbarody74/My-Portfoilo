@@ -1,0 +1,35 @@
+.toggle {
+  border: 3px solid var(--orange);
+  border-radius: 1rem;
+  width: 60px;
+  padding: 2px;
+  position: relative;
+}
+.toggle .sun, .toggle .moon {
+  display: none;
+  cursor: pointer;
+  color: var(--orange);
+}
+.toggle .moon {
+  margin-left: auto;
+}
+.toggle .active {
+  display: block;
+}
+.toggle .t__button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--orange);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+  transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .toggle {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,54 @@
+.testimonials {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.testimonials h2 {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.testimonials h2 span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+.testimonials .swiper {
+  width: 100%;
+  height: 70%;
+}
+.testimonials .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials .swiper .swiper-slide .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  border: 7px solid var(--blueCard);
+  padding: 2rem;
+}
+.testimonials .swiper .swiper-slide .box img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.testimonials .blur {
+  position: absolute;
+  background: rgb(238, 210, 255);
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  filter: blur(40px);
+}

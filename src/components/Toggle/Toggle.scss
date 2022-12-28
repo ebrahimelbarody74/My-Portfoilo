@@ -1,0 +1,35 @@
+.toggle{
+    border: 3px solid var(--orange);
+    border-radius: 1rem;
+    width: 60px;
+    padding: 2px;
+    position: relative;
+    .sun,.moon{
+        display: none;
+        cursor: pointer;
+        color: var(--orange);
+    }
+    .moon{
+        margin-left: auto;
+    }
+    .active{
+        display: block;
+    }
+    .t__button{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: var(--orange);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 4px;
+        transition: .3s;
+    }
+}
+
+@media(max-width:767px){
+    .toggle{
+        margin-left: auto;
+    }
+}

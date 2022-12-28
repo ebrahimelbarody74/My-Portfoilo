@@ -1,0 +1,95 @@
+.services {
+  display: flex;
+  height: 100vh;
+  padding: 100px 0;
+}
+.services .s__left {
+  flex: 1;
+  padding: 0 100px;
+}
+.services .s__left h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.services .s__left p {
+  color: var(--gray);
+  font-size: 14px;
+}
+.services .s__left .c__button {
+  margin-top: 20px;
+}
+.services .s__right {
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+.services .s__right .card {
+  position: absolute;
+  left: 14rem;
+  text-align: center;
+  border: 7px solid var(--orangeCard);
+  padding: 0 26px 2rem;
+  border-radius: 17px;
+  width: 10rem;
+  height: 13rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.26);
+}
+.services .s__right .card img {
+  transform: scale(0.7);
+  margin: auto;
+  margin-bottom: -2rem;
+}
+.services .s__right .card .text span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.services .s__right .card .text p {
+  font-size: 16px;
+}
+.services .s__right .card .text .c__button {
+  background-color: #fff;
+  box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+  border-radius: 7px;
+  border: none;
+  color: #5290fd;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+.services .s__right .blur {
+  position: absolute;
+  background: rgb(238, 210, 255);
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: 15%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media (max-width: 1300px) {
+  .services {
+    flex-direction: column;
+    text-align: center;
+    height: 200vh;
+    padding: 0;
+  }
+  .s__right {
+    margin-top: 20px;
+  }
+  .card {
+    position: static !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .s__left {
+    padding: 0 !important;
+  }
+}

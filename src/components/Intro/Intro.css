@@ -1,0 +1,140 @@
+.intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+.intro .i__left {
+  flex: 1;
+}
+.intro .i__left h1, .intro .i__left span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.intro .i__left span {
+  color: var(--orange);
+}
+.intro .i__left p {
+  color: var(--gray);
+  max-width: 80%;
+  font-weight: 100;
+  font-size: 16px;
+}
+.intro .i__left .i__button {
+  margin-top: 30px;
+  width: 6rem;
+  height: 2rem;
+}
+.intro .i__left .i__social {
+  display: flex;
+  margin-top: 4rem;
+}
+.intro .i__left .i__social img {
+  transform: scale(0.5);
+  cursor: pointer;
+}
+.intro .i__right {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+.intro .i__right > * {
+  position: absolute;
+  z-index: 1;
+}
+.intro .i__right .v1 {
+  transform: scale(0.69);
+  top: -9%;
+  left: -15%;
+}
+.intro .i__right .v2 {
+  top: -4.6%;
+  left: -3rem;
+  transform: scale(0.67);
+}
+.intro .i__right .body {
+  transform: scale(1);
+  left: 10%;
+  top: -6%;
+}
+.intro .i__right .crown {
+  background-color: white;
+  border-radius: 17px;
+  top: -4%;
+  left: 68%;
+  display: flex;
+  box-shadow: var(--boxShadow);
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 0 28px 0 0;
+  color: black;
+}
+.intro .i__right .crown img {
+  transform: scale(0.4);
+}
+.intro .i__right .crown span {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.intro .i__right .thumb {
+  background-color: white;
+  border-radius: 17px;
+  top: 18rem;
+  left: 0;
+  display: flex;
+  box-shadow: var(--boxShadow);
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 0 28px 0 0;
+  color: black;
+}
+.intro .i__right .thumb img {
+  transform: scale(0.4);
+}
+.intro .i__right .thumb span {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.intro .i__right .moji {
+  position: absolute;
+  transform: scale(0.6);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+}
+.intro .blur {
+  position: absolute;
+  background: rgb(238, 210, 255);
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    height: 200vh;
+  }
+}
+@media (max-width: 767px) {
+  .body {
+    left: 25% !important;
+  }
+  .i__right {
+    margin-left: -200px;
+  }
+  .i__right .v1, .i__right .v2 {
+    transform: scale(0.4) !important;
+  }
+  .v1, .v2, .thumb, .crown {
+    display: none !important;
+  }
+}

@@ -1,0 +1,101 @@
+.works{
+    display: flex;
+    padding: 100px 0;
+    height: 70vh;
+    align-items: center;
+    .w__left{
+        flex: 1;
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            span{
+                font-size: 3rem;
+                font-weight: bold;
+                color: var(--orange);
+            }
+        }
+        .w__button{
+            margin-top: 40px;
+        }
+    }
+    .w__right{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        div{
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+            background-color: #fff;
+            box-shadow: var(--smboxShadow);
+            &>*{
+                position: absolute;
+                transform: scale(.5);
+                background-color: #fff;
+                box-shadow: var(--smboxShadow);
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            a:nth-child(1){
+                left: 50%;
+                transform: translateX(-50%) scale(.5);
+                bottom: -25%;
+            }
+            a:nth-child(2){
+                top: 50%;
+                transform: translateY(-50%) scale(.5);
+                right: -25%;
+            }
+            a:nth-child(3){
+                top: 50%;
+                transform: translate(-50%,-50%) scale(.5);
+                left: 50%;
+            }
+            a:nth-child(4){
+                top: 50%;
+                transform: translateY(-50%) scale(.5);
+                left: -25%;
+            }
+            a:nth-child(5){
+                left: 50%;
+                transform: translateX(-50%) scale(.5);
+                top: -25%;
+            }
+        }
+        .circle{
+            position: absolute;
+            left: 40%;
+            z-index: -1;
+            width: 250px;
+            height: 250px;
+            &.blue{
+                top: 10%;
+                background-color: #1949b8;
+            }
+            &.yellow{
+                bottom: 10%;
+                background-color: #f5c32c;
+            }
+        }
+    }
+}
+
+@media(max-width:790px){
+    .works{
+        flex-direction: column;
+        .w__right{
+            display: none;
+        }
+    }
+}
